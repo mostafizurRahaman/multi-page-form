@@ -1,0 +1,368 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500;600;700&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body,
+html {
+   font-family: "Rajdhani", sans-serif;
+   background: #000939;
+   color: white;
+}
+
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+
+.form-container {
+   width: 548px;
+   /* height: 762px; */
+   background: #0f1a53;
+   box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.09);
+   border-radius: 12px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   -ms-border-radius: 12px;
+   -o-border-radius: 12px;
+}
+.form-container .form {
+   display: flex;
+   padding: 0px 0px 80px 0px;
+}
+.form-container .form .page {
+   width: 548px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 47px;
+   padding: 0px 64px;
+}
+
+.form-container .page .title {
+   font-family: Rajdhani;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 30px;
+   letter-spacing: 0em;
+   text-align: center;
+   /* display: inline-block; */
+   position: relative;
+}
+
+.page .title:before {
+   content: "";
+   width: 80px;
+   height: 2px;
+   display: block;
+   background: #a330fd;
+   position: absolute;
+   bottom: -10px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+}
+
+.page .field {
+   display: flex;
+   flex-direction: column;
+   row-gap: 15px;
+}
+
+.form-container .form .label {
+   font-family: "Rajdhani";
+   font-weight: 700;
+   font-size: 20px;
+   color: #ffffff;
+   text-transform: capitalize;
+}
+
+.form-container .form input[type="text"],
+.form-container .form input[type="email"],
+.form-container .form select {
+   box-sizing: border-box;
+   background: #112277;
+   border: 1px solid #5968b1;
+   border-radius: 5px;
+   color: #c1c7cb;
+   text-transform: uppercase;
+   height: 56px;
+   padding-left: 15px;
+   font-size: 16px;
+}
+.radio-fields {
+   display: flex;
+   flex-direction: column;
+   row-gap: 17px;
+   align-items: start;
+}
+
+.radio-fields label {
+   font-family: "Rajdhani";
+   font-weight: 400;
+   font-size: 19px;
+   color: #ffffff;
+   text-transform: capitalize;
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   column-gap: 12.5px;
+}
+
+.radio-fields label span {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   border: 2px solid #8d17ea;
+   display: inline-block;
+   position: relative;
+}
+.radio-fields label span:after {
+   content: "";
+   width: 7px;
+   height: 7px;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   background: #8d17ea;
+   display: block;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%) scale(0);
+   -webkit-transform: translate(-50%, -50%) scale(0);
+   -moz-transform: translate(-50%, -50%) scale(0);
+   -ms-transform: translate(-50%, -50%) scale(0);
+   -o-transform: translate(-50%, -50%) scale(0);
+   transition: 300ms ease-in-out 0s;
+   -webkit-transition: 300ms ease-in-out 0s;
+   -moz-transition: 300ms ease-in-out 0s;
+   -ms-transition: 300ms ease-in-out 0s;
+   -o-transition: 300ms ease-in-out 0s;
+}
+.form-container .form .radio-fields input[type="radio"] {
+   display: none;
+}
+.radio-fields input[type="radio"]:checked ~ span:after {
+   transform: translate(-50%, -50%) scale(1);
+   -webkit-transform: translate(-50%, -50%) scale(1);
+   -moz-transform: translate(-50%, -50%) scale(1);
+   -ms-transform: translate(-50%, -50%) scale(1);
+   -o-transform: translate(-50%, -50%) scale(1);
+}
+
+.form-container .form .btn {
+   width: 100%;
+   height: 47.39px;
+   background: #8d17ea;
+   border-radius: 5px;
+   border: none;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   text-transform: uppercase;
+}
+
+.form-container .form .back-btn {
+   border: 2px solid #8d17ea;
+   background: none;
+   color: #8d17ea;
+}
+
+.form .button-contanier {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.form .upload-container {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.form .upload-container label {
+   width: 122px;
+   height: 122px;
+   border: 1.5px dashed #303d81;
+   border-radius: 4px;
+   display: block;
+   background: url("../img/upload.png") no-repeat;
+   background-position: center center;
+   display: flex;
+   align-items: end;
+   justify-content: center;
+}
+.form .upload-container input[type="file"] {
+   text-align: center;
+   color: rgba(0, 0, 0, 0);
+}
+.form .upload-container input[type="file"]::file-selector-button {
+   display: none;
+}
+
+.block {
+   display: block;
+}
+
+.none {
+   display: none;
+}
+
+/* =================
+Steps are heres.
+==============*/
+
+.steps-container {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 35px;
+   margin-top: 60px;
+}
+.steps-container .steps {
+   text-align: center;
+}
+.steps-container .steps label {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   color: #c1c7cb;
+}
+.steps-container .steps .steps-content {
+   width: 20px;
+   height: 20px;
+   border: 2px solid #a330fd;
+   color: transparent;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   margin: 0 auto;
+   display: block;
+   font-size: 12px;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   z-index: 10;
+   margin-top: 10px;
+   text-transform: capitalize;
+}
+
+.steps-container .steps:first-child .steps-content {
+   background: #a330fd;
+}
+.steps-container .steps:first-child label {
+   color: #fff!important;
+   font-weight: 600;
+   
+}
+
+.normal .steps-content {
+   background: #8d17ea;
+}
+.normal span {
+   color: #8d17ea;
+   z-index: 50;
+}
+.medium span {
+   color: rgb(0, 0, 0);
+   z-index: 50;
+}
+.medium .steps-content {
+   background: #8d17ea;
+   color: #ffffff;
+}
+.full span {
+   color: rgb(255, 255, 255);
+   z-index: 50;
+}
+.full label,
+.medium label {
+   color: #ffffff !important;
+}
+.full .steps-content {
+   background: #8d17ea;
+}
+
+/* .normal  .steps-content  span,
+.medium  .steps-content span,
+.full .steps-content  span {
+   display: block;
+} */
+
+.progress-line {
+   width: 109px;
+   height: 3px;
+   background: #1c2c80;
+   position: absolute;
+   bottom: 9px;
+   left: 100%;
+   top: 50%;
+   display: block;
+   z-index: 1;
+   transform: translate(1px, -50%);
+}
+
+.progress-line::after {
+   content: "";
+   width: 0px;
+   height: 3px;
+   background: #a330fd;
+   position: absolute;
+   bottom: 9px;
+   left: 0px;
+   top: 50%;
+   display: block;
+   z-index: 1;
+   transform: translate(1px, -50%);
+}
+
+.medium .progress-line::after {
+   animation: animated-progress 0.3s ease-in-out 0s 1 forwards;
+   -webkit-animation: animated-progress 0.3s ease-in-out 0s 1 forwards;
+   width: 0px;
+}
+
+.full .progress-line::after {
+   animation: animated-progress 0.3s ease-in-out 0s 1 forwards;
+   -webkit-animation: animated-progress 0.3s ease-in-out 0s 1 forwards;
+   width: 0px;
+}
+
+@keyframes animated-progress {
+   from {
+      width: 0px;
+   }
+   to {
+      width: 100%;
+   }
+}
+
+.seperator {
+   margin: 40px 24px;
+   height: 2px;
+   background: #192563;
+}

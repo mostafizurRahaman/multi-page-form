@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Tork Assignments </title>
+   
+</head>
+   
+<body>
+   <main class="container">
+      <div class="form-container">
+        <!-- Steps codes started -->
+            <div class="steps-container">
+                <!-- Single steps  -->
+               <div id="step1" class="steps">
+                  <label>Account Setup</label>
+                  <div class="steps-content">
+                     <span>&#x2713</span>
+                     <div class="progress-line" id="progress-line1">
+                     </div>
+                  </div>                  
+               </div>
+                <!-- Single steps  -->
+               <div id="step2" class="steps">
+                  <label>Social Profiles</label>
+                  <div class="steps-content">
+                     <span>&#x2713</span>
+                     <div class="progress-line" id="progress-line1">
+                     </div>
+                  </div>
+               </div>
+          <!-- Single steps  -->
+          <div id="step3" class="steps">
+            <label>Personal Details</label>
+            <div class="steps-content">
+               <span>&#x2713</span>
+            </div>
+         </div>   
+         </div>
+        <!-- Steps codes Ended -->
+         <div class="seperator"></div>
+         <!-- Multi step form started here -->
+         <form class="form" id="form" >
+               <!-- first part started -->
+               <div id="part1" class="part1 block">
+                  <div  class="page">
+                     <h2 class="title">Choose Verification option</h2>
+                     <div class="field">
+                        <label for="country" class="label">select region</label>
+                        <select  required>
+                           <option value="USA">usa</option>
+                           <option value="USA">Bangladesh</option>
+                           <option value="USA">India</option>
+                           <option value="Pakistan">pakistan</option>
+                        </select>
+                     </div>
+                     <div class="field ">
+                        <label for="identify-type" class="label">select identify type</label>
+                        <div class="radio-fields">
+                           <label for="national-id">
+                              <input name="identify" id="national-id" type="radio"  checked required> national id 
+                              <span></span>
+                           </label>
+                           <label for="passport">
+                              <input name="identify" id="passport" type="radio" required >
+                               passport 
+                               <span></span>
+                              </label>
+                           <label for="driving-licence">
+                              <input name="identify" id="driving-licence" type="radio" required > driving license 
+                              <span></span>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="field">
+                           <button id="next1" class="btn">next</button>
+                     </div>
+                  </div>
+               </div>
+               <!-- first part ended-->
+               <!-- second part Started-->
+            
+               <div id="part2" class="part2 none">
+                  <div id="page2" class="page ">
+                     <h2 class="title">Upload Media</h2>
+                     <div class="field">
+                        <div class="upload-container">
+                           <div>
+                              <label  for="file1">
+                                    <input type="file"  id="file1" required>
+                              </label>
+                              
+                           </div>
+                           <div>
+                              <label  for="file2">
+                                    <input type="file"  id="file2" required>
+                              </label>
+                              
+                           </div>
+                           <div>
+                              <label  for="file3">
+                                    <input type="file"  id="file3" required>
+                              </label>                        
+                           </div>
+                        </div>
+                     </div>
+                     <div class="field">
+                        <label for="nid-number" class="label">select identify type</label>
+                        <input type="text" id="nid-number"name="nid-number" placeholder="eg. 480 555-0103" required  />
+                     </div>
+                     <div class="button-contanier">
+                        <button  class="btn back-btn" id="back1">Back</button>
+                        <button  class="btn next-btn" id="next2">Next</button>
+                     </div>
+                  </div>
+               </div>
+              <!-- second part ended-->
+              <!-- Third part ended-->
+               <div id="part3" class="part3 none">
+                  <div  class="page">
+                     <h2 class="title">Personal Information </h2>
+                     <div class="field">
+                        <label for="name" class="label">name</label>
+                        <input type="text" name="name" id="name" class="fullname" required placeholder="full name">
+                     </div>
+                     <div class="field">
+                        <label for="email" class="label">email</label>
+                        <input type="email" name= id="email" required placeholder="email">
+                     </div>
+                     <div class="field">
+                        <label for="phone" class="label">phone</label>
+                        <input type="text" name="phone" id="phone" required placeholder="phone number">
+                     </div>
+                     <div class="field">
+                        <button id="next3" class="btn">next</button>
+                     </div>
+                  </div>
+               </div>     
+             <!-- Third part ended-->     
+         
+         </form>
+           <!-- Multi step form Ended here -->
+         </section>
+   </main>
+
+  
+   <script src="js/index.js"></script>
+</body>
+
+</html>
