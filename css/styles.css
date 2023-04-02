@@ -314,7 +314,7 @@ Steps are heres.
 } */
 
 .progress-line {
-   width: 109px;
+   width: 119px;
    height: 3px;
    background: #1c2c80;
    position: absolute;
@@ -322,7 +322,7 @@ Steps are heres.
    left: 100%;
    top: 50%;
    display: block;
-   z-index: 1;
+   z-index: 0;
    transform: translate(1px, -50%);
 }
 
@@ -336,7 +336,7 @@ Steps are heres.
    left: 0px;
    top: 50%;
    display: block;
-   z-index: 1;
+   z-index: 5;
    transform: translate(1px, -50%);
 }
 
