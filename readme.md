@@ -1,6 +1,6 @@
 # multiplage registration form
 
-### live link:- https://github.com/mostafizurRahaman/multi-page-form.git
+### live link:- https://mostafizurrahaman.github.io/multi-page-form/
 
 ### Technology Used:
 
